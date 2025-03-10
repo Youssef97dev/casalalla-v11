@@ -2,8 +2,10 @@
 import Image from "next/image";
 import Accordion from "./Accordion";
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
 
 const Activities = () => {
+  const { t } = useTranslation();
   return (
     <div
       id="activities"
@@ -26,7 +28,9 @@ const Activities = () => {
         <Link
           href="/custom-booking"
           className="w-full rounded-full border border-border_color py-2 mt-5 font-light uppercase hover:bg-book_btn_hover hover:text-white transition-all duration-200"
-        >{`Book Experience`}</Link>
+        >
+          {t("activities.book_experience")}
+        </Link>
       </div>
     </div>
   );

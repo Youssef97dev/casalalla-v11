@@ -1,8 +1,10 @@
 import React from "react";
 import { FiMapPin } from "react-icons/fi";
 import { FaInstagram, FaWhatsapp, FaMailBulk } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+  const { t } = useTranslation();
   return (
     <div
       id="contact"
@@ -22,9 +24,9 @@ const Contact = () => {
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
-      <div className="w-full flex flex-col justify-center items-center text-text_color gap-2 px-14 py-5 mb-14 lg:hidden">
+      <div className="w-full flex flex-col justify-center items-center gap-2 px-10 py-5 mb-14 lg:hidden">
         <h1 className="uppercase text-[33.184px] leading-[46.4576px] ">
-          ACCÈS ET CONTACTS
+          {t("contact.title")}
         </h1>
         <div className="w-full flex justify-start items-center gap-3">
           <FiMapPin size={18} />

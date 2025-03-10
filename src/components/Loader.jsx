@@ -3,6 +3,12 @@ import { useState, useEffect } from "react";
 import { CircleLoader } from "react-spinners";
 import Navbar from "./Navbar";
 import Hero from "./Hero";
+import About from "./About";
+import SlideImages from "./SlideImages";
+import Activities from "./Activities";
+import Contact from "./Contact";
+import Footer from "./Footer";
+import Gallery from "./Gallery";
 
 const Loader = () => {
   const [isClient, setIsClient] = useState(false);
@@ -19,6 +25,12 @@ const Loader = () => {
         <div className="w-full flex flex-col">
           <Navbar />
           <Hero />
+          <About />
+          <SlideImages />
+          <Activities />
+          <Contact />
+          <Gallery />
+          <Footer />
         </div>
       ) : (
         <div className="fixed inset-0 z-40 flex items-center justify-center">

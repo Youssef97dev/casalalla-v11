@@ -2,9 +2,11 @@
 import { useState } from "react";
 import { Transition } from "@headlessui/react";
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const { t } = useTranslation();
 
   return (
     <nav className={`w-full bg-bg_navbar shadow-md`}>
@@ -17,28 +19,28 @@ const Navbar = () => {
               href="#hero"
               className={`tracking-[0.3em] text-gray-300 hover:text-white_color`}
             >
-              Home
+              {t("navbar.home")}
             </a>
             <a
               href="#about"
               className={`tracking-[0.3em] text-gray-300 hover:text-white_color`}
             >
-              About
+              {t("navbar.about")}
             </a>
             <a
               href="#gallery"
               className={`tracking-[0.3em] text-gray-300 hover:text-white_color`}
             >
-              Gallery
+              {t("navbar.gallery")}
             </a>
             <a
               href="#activities"
               className={`tracking-[0.3em] text-gray-300 hover:text-white_color`}
             >
-              Activities
+              {t("navbar.activities")}
             </a>
             <a
-              href="#"
+              href={t("navbar.menu")}
               target="_blank"
               className={`tracking-[0.3em] text-gray-300 hover:text-white_color`}
             >
@@ -93,19 +95,19 @@ const Navbar = () => {
                 className="space-y-8 text-bg_intro leading-[25px] text-[20px] mt-10 uppercase font-light"
               >
                 <li className="pb-3 border-b border-bg_navbar">
-                  <Link href="#hero">Home</Link>
+                  <Link href="/">{t("navbar.home")}</Link>
                 </li>
                 <li className="pb-3 border-b border-bg_navbar">
-                  <Link href="#about">About</Link>
+                  <Link href="#about">{t("navbar.about")}</Link>
                 </li>
                 <li className="pb-3 border-b border-bg_navbar">
-                  <Link href="#gallery">Gallery</Link>
+                  <Link href="#gallery">{t("navbar.gallery")}</Link>
                 </li>
                 <li className="pb-3 border-b border-bg_navbar">
-                  <Link href="#activities">Activities</Link>
+                  <Link href="#activities">{t("navbar.activities")}</Link>
                 </li>
                 <li className="pb-3 border-b border-bg_navbar">
-                  <Link href="/menu-casa-lalla-takerkoust.pdf" target="_blank">
+                  <Link href={t("navbar.menu")} target="_blank">
                     Menu
                   </Link>
                 </li>
