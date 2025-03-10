@@ -102,11 +102,11 @@ const SlideImages = () => {
   }, []);
 
   return (
-    <div className="w-full flex flex-col justify-center items-center gap-3 mt-8 lg:mt-0">
+    <div className="w-full flex flex-col justify-center items-center gap-2 mt-8 lg:mt-0">
       <div className="w-full h-full flex justify-center items-center">
         <Swiper
           slidesPerView={isMobile ? 2 : 5}
-          spaceBetween={15}
+          spaceBetween={10}
           freeMode={true}
           loop={true}
           autoplay={{
@@ -143,7 +143,7 @@ const SlideImages = () => {
       <div className="w-full h-full flex justify-center items-center">
         <Swiper
           slidesPerView={isMobile ? 2 : 5}
-          spaceBetween={15}
+          spaceBetween={10}
           freeMode={true}
           loop={true}
           autoplay={{
