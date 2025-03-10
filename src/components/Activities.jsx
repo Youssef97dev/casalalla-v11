@@ -21,7 +21,7 @@ const Activities = () => {
         />
       </div>
       <div className="w-full flex flex-col justify-center items-center gap-3 px-8 py-2 text-center">
-        <h1 className="uppercase text-[30px] leading-[40px] lg:text-[48px] lg:leading-[60px] font-light mb-5">
+        <h1 className="uppercase text-[30px] leading-[40px] xl:text-[48px] xl:leading-[60px] font-light mb-5">
           Expérience <br /> Casa Lalla
         </h1>
         <Accordion />
