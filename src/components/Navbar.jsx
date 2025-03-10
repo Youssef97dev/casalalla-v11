@@ -97,7 +97,7 @@ const Navbar = () => {
             <div className="fixed top-[4rem] right-0 z-10 w-full h-screen bg-white flex flex-col items-left justify-between px-20">
               <ul
                 onClick={() => setIsOpen(false)}
-                className="space-y-8 text-bg_intro leading-[25px] text-[20px] mt-10 uppercase font-light"
+                className="space-y-8 leading-[25px] text-[20px] mt-10 uppercase font-light"
               >
                 <li className="pb-3 border-b border-bg_navbar">
                   <Link href="/">{t("navbar.home")}</Link>
