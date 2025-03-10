@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="w-full h-full flex flex-col justify-center items-center gap-10 mt-10"
+      className="w-full h-full flex flex-col lg:flex-row-reverse justify-center items-center gap-10 lg:gap-2 mt-5"
     >
       <div className="w-full px-4 py-4 lg:px-0 rounded-lg">
         <iframe
@@ -24,23 +24,23 @@ const Contact = () => {
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
-      <div className="w-full flex flex-col justify-center items-center gap-2 px-10 py-5 mb-14 lg:hidden">
+      <div className="w-full flex flex-col justify-center items-center gap-2 px-10 py-5 mb-14">
         <h1 className="uppercase text-[33.184px] leading-[46.4576px] ">
           {t("contact.title")}
         </h1>
-        <div className="w-full flex justify-start items-center gap-3">
+        <div className="w-full flex justify-start items-center gap-3 pl-0 lg:pl-20">
           <FiMapPin size={18} />
           <span>Casa Lalla Takerkoust, Marrakech 40000 Morocco</span>
         </div>
-        <div className="w-full flex justify-start items-center gap-3">
+        <div className="w-full flex justify-start items-center gap-3 pl-0 lg:pl-20">
           <FaInstagram size={18} />
           <span>@casa.lalla.takerkoust</span>
         </div>
-        <div className="w-full flex justify-start items-center gap-3">
+        <div className="w-full flex justify-start items-center gap-3 pl-0 lg:pl-20">
           <FaWhatsapp size={18} />
           <span>+212 6 75 48 01 03</span>
         </div>
-        <div className="w-full flex justify-start items-center gap-3">
+        <div className="w-full flex justify-start items-center gap-3 pl-0 lg:pl-20">
           <FaMailBulk size={18} />
           <span>reservations@casalallatakerkoust.com</span>
         </div>

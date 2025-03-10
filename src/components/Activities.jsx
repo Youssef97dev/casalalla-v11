@@ -9,7 +9,7 @@ const Activities = () => {
   return (
     <div
       id="activities"
-      className="w-full h-full flex flex-col lg:flex-row justify-center items-center gap-10 mt-2"
+      className="w-full h-full lg:h-[120vh] flex flex-col lg:flex-row justify-center items-center gap-10 mt-2"
     >
       <div className="w-full h-full">
         <Image
