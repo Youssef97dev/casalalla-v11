@@ -13,10 +13,10 @@ const Hero = () => {
         Your browser does not support the video tag.
       </video>
       <Image
-        src="https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto/v1/CasaLalla-VNor/ijf7z5lbtwayp94imo8s"
-        height={500}
-        width={1000}
-        className="object-cover h-full w-full rounded-lg hidden lg:block"
+        src="https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto/v1/CasaLalla-VNor/hg0ykixiwpvehv9hdm4s"
+        height={2000}
+        width={2000}
+        className="object-cover h-full w-full hidden lg:block mt-2"
       />
       {/* Overlay */}
 
@@ -24,7 +24,13 @@ const Hero = () => {
         src="/logo-2.png"
         height={150}
         width={150}
-        className="absolute bottom-[38%] left-[30%] lg:left-[44%]  object-cover"
+        className="absolute bottom-[38%] left-[30%] object-cover block lg:hidden"
+      />
+      <Image
+        src="/logo-2.png"
+        height={250}
+        width={250}
+        className="absolute bottom-[38%] left-[44%] object-cover hidden lg:block"
       />
     </div>
   );

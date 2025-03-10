@@ -9,46 +9,51 @@ const Navbar = () => {
   const { t } = useTranslation();
 
   return (
-    <nav className={`w-full bg-bg_navbar shadow-md`}>
+    <nav className={`w-full bg-white shadow-md`}>
       {/* Navbar Content */}
       <div className="max-w-screen-xl mx-auto md:px-4 p-0">
         {/* Desktop Navbar */}
-        <div className={`hidden md:flex flex-col items-center space-y-0`}>
-          <div className="flex space-x-4 text-[15px] leading-[60px] uppercase">
+        <div
+          className={`hidden md:flex items-center justify-between space-y-0`}
+        >
+          <Link href="/" className="text-2xl font-semibold">
+            <img src="/logo-1.png" className="w-24 h-24" alt="Logo" />
+          </Link>
+          <div className="flex space-x-4 text-[15px] leading-[60px] uppercase font-medium">
             <a
               href="#hero"
-              className={`tracking-[0.3em] text-gray-300 hover:text-white_color`}
+              className={`tracking-[0.3em] text-text_color hover:text-gray-500`}
             >
               {t("navbar.home")}
             </a>
             <a
               href="#about"
-              className={`tracking-[0.3em] text-gray-300 hover:text-white_color`}
+              className={`tracking-[0.3em] text-text_color hover:text-gray-500`}
             >
               {t("navbar.about")}
             </a>
             <a
               href="#gallery"
-              className={`tracking-[0.3em] text-gray-300 hover:text-white_color`}
+              className={`tracking-[0.3em] text-text_color hover:text-gray-500`}
             >
               {t("navbar.gallery")}
             </a>
             <a
               href="#activities"
-              className={`tracking-[0.3em] text-gray-300 hover:text-white_color`}
+              className={`tracking-[0.3em] text-text_color hover:text-gray-500`}
             >
               {t("navbar.activities")}
             </a>
             <a
               href={t("navbar.menu")}
               target="_blank"
-              className={`tracking-[0.3em] text-gray-300 hover:text-white_color`}
+              className={`tracking-[0.3em] text-text_color hover:text-gray-500`}
             >
               Menu
             </a>
             <a
               href="#contact"
-              className={`tracking-[0.3em] text-gray-300 hover:text-white_color`}
+              className={`tracking-[0.3em] text-text_color hover:text-gray-500`}
             >
               Contact
             </a>

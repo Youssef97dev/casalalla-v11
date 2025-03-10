@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import {
   MdOutlineArrowForwardIos,
@@ -88,11 +88,24 @@ const secondImages = [
 ];
 
 const SlideImages = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    handleResize(); // Check on load
+    window.addEventListener("resize", handleResize); // Update on resize
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
-    <div className="w-full flex flex-col justify-center items-center gap-3 mt-8">
+    <div className="w-full flex flex-col justify-center items-center gap-3 mt-8 lg:mt-0">
       <div className="w-full h-full flex justify-center items-center">
         <Swiper
-          slidesPerView={1}
+          slidesPerView={isMobile ? 1 : 5}
           spaceBetween={15}
           freeMode={true}
           loop={true}
@@ -129,7 +142,7 @@ const SlideImages = () => {
       </div>
       <div className="w-full h-full flex justify-center items-center">
         <Swiper
-          slidesPerView={1}
+          slidesPerView={isMobile ? 1 : 5}
           spaceBetween={15}
           freeMode={true}
           loop={true}
