@@ -59,7 +59,7 @@ const Accordion = () => {
             <AnimateHeight duration={300} height={active === "2" ? "auto" : 0}>
               <div className="space-y-2 p-4 text-[13px] leading-[30px] border-t border-[#d3d3d3]">
                 <p>{t("activities.quad_desc")}</p>
-                <p>
+                {/*<p>
                   {t("activities.quad_desc_1")}
                   <br />
                   {t("activities.quad_desc_2")}
@@ -71,7 +71,7 @@ const Accordion = () => {
                   {t("activities.quad_desc_5")}
                   <br />
                   {t("activities.quad_desc_6")}
-                </p>
+              </p>*/}
               </div>
             </AnimateHeight>
           </div>
@@ -96,7 +96,7 @@ const Accordion = () => {
             <AnimateHeight duration={300} height={active === "3" ? "auto" : 0}>
               <div className="space-y-2 p-4 text-[13px] leading-[30px] border-t border-[#d3d3d3]">
                 <p>{t("activities.jetski_desc")}</p>
-                <p>{t("activities.jetski_desc_1")}</p>
+                {/*<p>{t("activities.jetski_desc_1")}</p> */}
               </div>
             </AnimateHeight>
           </div>
