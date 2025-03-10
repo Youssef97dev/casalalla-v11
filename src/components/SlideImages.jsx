@@ -105,7 +105,7 @@ const SlideImages = () => {
     <div className="w-full flex flex-col justify-center items-center gap-3 mt-8 lg:mt-0">
       <div className="w-full h-full flex justify-center items-center">
         <Swiper
-          slidesPerView={isMobile ? 1 : 5}
+          slidesPerView={isMobile ? 2 : 5}
           spaceBetween={15}
           freeMode={true}
           loop={true}
@@ -142,7 +142,7 @@ const SlideImages = () => {
       </div>
       <div className="w-full h-full flex justify-center items-center">
         <Swiper
-          slidesPerView={isMobile ? 1 : 5}
+          slidesPerView={isMobile ? 2 : 5}
           spaceBetween={15}
           freeMode={true}
           loop={true}
